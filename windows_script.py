@@ -1,5 +1,8 @@
 import platform
 import wmi
+import logging
+
+# System Informations
 
 my_system = platform.uname()
 print(f"System: {my_system.system}")
@@ -19,6 +22,8 @@ print(f"NumberOfProcessors: {my_system.NumberOfProcessors}")
 print(f"SystemType: {my_system.SystemType}")
 print(f"SystemFamily: {my_system.SystemFamily}")
 
+# System Processes
+
 # Initializing the wmi constructor
 f = wmi.WMI()
  
@@ -30,3 +35,21 @@ for process in f.Win32_Process():
      
     # Displaying the P_ID and P_Name of the process
     print(f"{process.ProcessId:<10} {process.Name}")
+
+
+# Logging Store
+
+#now we will Create and configure logger 
+logging.basicConfig(filename="python_windows.log", 
+					format='%(asctime)s %(message)s', 
+					filemode='w') 
+
+#Let us Create an object 
+logger=logging.getLogger() 
+
+#Now we are going to Set the threshold of logger to DEBUG 
+logger.setLevel(logging.DEBUG)
+
+#some messages to test
+logger.debug("Debug message") 
+
