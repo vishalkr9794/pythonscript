@@ -52,5 +52,5 @@ logger.setLevel(logging.DEBUG)
 
 #some messages to test
 logger.debug("Debug message")
-logging.warning('warning')
+logging.warning('warning message')
 logging.info('Opening file %r, mode = %r', filename, mode)
