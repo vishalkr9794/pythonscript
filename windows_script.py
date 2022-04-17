@@ -53,3 +53,4 @@ logger.setLevel(logging.DEBUG)
 #some messages to test
 logger.debug("Debug message")
 logging.warning('Feature is deprecated')
+logging.info('Opening file %r, mode = %r', filename, mode)
