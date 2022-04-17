@@ -41,7 +41,7 @@ for process in f.Win32_Process():
 
 #now we will Create and configure logger 
 logging.basicConfig(filename="python_windows.log", 
-					format='%(asctime)s %(message)s', 
+					format='%(asctime)s %(message)s %(date)s', 
 					filemode='w') 
 
 #Let us Create an object 
