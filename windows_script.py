@@ -40,7 +40,7 @@ for process in f.Win32_Process():
 # Logging Store
 
 #now we will Create and configure logger 
-logging.basicConfig(filename="python_windows.log", 
+logging.basicConfig(filename="logs_windows.log", 
 					format='%(asctime)s %(message)s %(date)s', 
 					filemode='w') 
 
