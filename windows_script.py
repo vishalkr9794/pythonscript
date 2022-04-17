@@ -51,5 +51,5 @@ logger=logging.getLogger()
 logger.setLevel(logging.DEBUG)
 
 #some messages to test
-logger.debug("Debug message") 
-
+logger.debug("Debug message")
+logging.warning('Feature is deprecated')
